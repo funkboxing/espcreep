@@ -44,10 +44,14 @@ The breakout helps keep things simple, but soldering the connections would work 
 I've only tested on Ubuntu 18.04 but the python script is simple enough so seems like it should run anywhere you can get the python OpenCV module loaded.
 The SSID\PASS is hardcoded in the arduino sketch for now.
 The UDP 'protocol' is barely that. You send a string in the format n,x,y,a,b
-The arduino sketch parses that out to motor or LED controls
+The arduino sketch parses that out to motor or LED controls:
+
 n-command code | x,y-motor\led vals | a,b-for later
+
 command codes are 5 for motors, 8 for LED
+
 "5,4700,4900,0,0"	Sets motor PWMs to 4700 and 4900
+
 "8,128,0,0,0"		Sets flash brightness to 1/2 brightness
 
 The idea is that all the calibration and motor states will be handled by control software on another machine.
