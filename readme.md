@@ -43,7 +43,17 @@ The breakout helps keep things simple, but soldering the connections would work 
 ### CODE NOTES:
 I've only tested on Ubuntu 18.04 but the python script is simple enough so seems like it should run anywhere you can get the python OpenCV module loaded.
 The SSID\PASS is hardcoded in the arduino sketch for now.
-Also I know I'm a trash coder. I'm not going to improve. I code when I need code coded, that's all.
+The UDP 'protocol' is barely that. You send a string in the format n,x,y,a,b
+The arduino sketch parses that out to motor or LED controls
+n-command code | x,y-motor\led vals | a,b-for later
+command codes are 5 for motors, 8 for LED
+"5,4700,4900,0,0"	Sets motor PWMs to 4700 and 4900
+"8,128,0,0,0"		Sets flash brightness to 1/2 brightness
+
+The idea is that all the calibration and motor states will be handled by control software on another machine.
+These aren't meant to do much onboard processing, just basic mobility and camera stream. My goal is a system that allows
+controlling several of these maybe on a little soccer field or in a maze or something.
+
 
 ### FILES:
 * ESP32CAM Arduino Sketch
@@ -57,6 +67,7 @@ Uh... I kind of forgot, I'll work on it but for now you can just run it, then go
 
 ### FUTURE PLANS:
 * Improve 3d parts
+* Wire management
 * Sort of a 'trolly' charging system with some wires sticking up that can make contact with 5V rails.
 * 3rd servo for gripper\lift action
 * RGB LED
