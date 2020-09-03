@@ -1,7 +1,7 @@
 # espcreep
 
 ## ESP32CAM Based Robot Type Thing
-http://funkboxing.com/wordpress/?p=2498
+http://funkboxing.com
 
 ![espcreep](/images/espcreep.jpg)
 
