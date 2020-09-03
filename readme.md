@@ -7,7 +7,7 @@ http://funkboxing.com
 
 A cheap and simple robot thing made for whatever purposes a cheap and simple robot might be useful for.
 It's not that much fun as it is but the idea is that you could make a 3-4 of these for under $100 and 
-it would be a start for a sort of robot programming sandbox. It needs mechanical work for sure, it's barely mobile on a flat surface, but it drives and turn so it's a start.
+it would be a start for a sort of robot programming sandbox. It needs mechanical work for sure, it's barely mobile on a flat surface, but it drives and turns so it's a start.
 
 If you haven't messed with an ESP32CAM before you'll probably want to do a webcam tutorial first to make sure you've got the hang of uploading with the FTDI and all that.
 
