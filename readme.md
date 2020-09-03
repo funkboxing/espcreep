@@ -40,6 +40,8 @@ The only trick is the 3d printed wheels are worthless unless you coat them with 
 Also there's no front axle or wheel connections yet. I just used coathangar wire and a couple of nuts glued on.
 The breakout helps keep things simple, but soldering the connections would work too. Just wire power and ground to the battery 5V pads and the steering servo to 13 and the drive to 14. If you do have the breakout use a 6x female dupont header on the cam side and male pins on the back for the servos and battery. The capacitor is probably redundant to the battery module circuitry, but I wasn't sure so I just added it.
 
+The microUSB port gets tucked in pretty tight so you can only charge it with a pretty thin plug. I hacked some plastic off one to use for charging it.
+
 ### CODE NOTES:
 I've only tested on Ubuntu 18.04 but the python script is simple enough so seems like it should run anywhere you can get the python OpenCV module loaded.
 The SSID\PASS is hardcoded in the arduino sketch for now.
